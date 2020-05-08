@@ -157,3 +157,11 @@ Using react-gh-pages for deployment instead:
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### To Do:
+
+- Implement all features of Angular Web App  
+    - import pages
+    - make sure all bootstrap works correctly
+    - make sure routing works correctly
+    - make sure all features working correctly
