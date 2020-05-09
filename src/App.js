@@ -1,7 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
+
+import Home from './pages/index';
 
 function App() {
   return (
