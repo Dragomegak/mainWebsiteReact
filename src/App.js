@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
-import Home from './pages/index';
+import Home from './components/index';
 
 function App() {
   return (
