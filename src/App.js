@@ -1,16 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+/* import logo from './logo.svg'; */
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
-import Home from './components/index';
+import Navigation from './components/header';
+import Home from './components/home';
+import Error from './components/404';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+             <Route path="/" component={Home} exact/>
+            <Route component={Error}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
+  );
+}
+
+export default App;
+
+/* base code
+<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,7 +43,4 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
-
-export default App;
+*/
