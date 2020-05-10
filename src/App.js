@@ -13,7 +13,7 @@ import Error from './components/404.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>>
         <Header />
           <Switch>
             <Route path="/" component={Home} exact/>
