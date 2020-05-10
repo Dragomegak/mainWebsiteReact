@@ -6,19 +6,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
-import Navigation from './components/header.jsx';
+import Header from './components/header.jsx';
+import Footer from './components/footer.jsx';
 import Home from './components/home.jsx';
 import Error from './components/404.jsx';
 
 function App() {
   return (
     <BrowserRouter>
-        <Navigation />
+        <Header />
           <Switch>
             <Route path="/" component={Home} exact/>
             <Route path="/home" component={Home} exact/>
           <Route component={Error}/>
           </Switch>
+          <Footer />
     </BrowserRouter>
   );
 }

@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.footer{
+  background-color: #343A40;
+  min-height: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: #000 0px 0px 4px;
+}

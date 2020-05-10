@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table} from 'react-bootstrap';
  
-const Navigation = props => (
+const Header = props => (
    <div className="App">
       <header>
         <Navbar expand="md" variant="dark" bg="dark">
@@ -23,4 +23,4 @@ const Navigation = props => (
       </div>
 );
  
-export default Navigation;
+export default Header;
