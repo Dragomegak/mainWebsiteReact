@@ -14,7 +14,6 @@ import Error from './components/404.jsx';
 function App() {
   return (
     <HashRouter basename='/'>
-    <BrowserRouter>
         <Header />
           <Switch>
             <Route path="/" component={Home} exact/>
@@ -22,7 +21,6 @@ function App() {
           <Route component={Error}/>
           </Switch>
           <Footer />
-    </BrowserRouter>
     </HashRouter>
   );
 }
