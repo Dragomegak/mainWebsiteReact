@@ -3,6 +3,22 @@
     margin: 0;
     min-height: calc(100vh - 72px);
 }
+
+.carousel{
+    /* Shifts page down from the header */
+    position: relative;
+    /* 
+    Minor change to account for header
+    top: 35px; 
+    */
+    padding-top: 1vh;
+    padding-bottom: 0.180vh;
+    background-color: grey;
+}
+.carousel-item{
+    max-height: 50vh;
+}
+
 .mission-quote{
     padding-top: 2vh;
     text-align: center;

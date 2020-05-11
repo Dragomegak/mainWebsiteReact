@@ -21,10 +21,10 @@ const home = () => {
             <div class="website-background">
                 <Carousel>
                     <Carousel.Item>
-                        <img className="d-block w-100" src={GradPhoto}/>
+                        <img className="d-block w-100 carousel-item" src={GradPhoto}/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="d-block w-100" src={YoungerPicture}/>
+                        <img className="d-block w-100 carousel-item" src={YoungerPicture}/>
                     </Carousel.Item>
                 </Carousel>
                 <h3 class="mission-quote">About Me</h3>
