@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/mainWebsiteReact/static/css/main.f78d80dc.chunk.css",
-    "main.js": "/mainWebsiteReact/static/js/main.20abe323.chunk.js",
-    "main.js.map": "/mainWebsiteReact/static/js/main.20abe323.chunk.js.map",
+    "main.css": "/mainWebsiteReact/static/css/main.73c2f564.chunk.css",
+    "main.js": "/mainWebsiteReact/static/js/main.be4036af.chunk.js",
+    "main.js.map": "/mainWebsiteReact/static/js/main.be4036af.chunk.js.map",
     "runtime-main.js": "/mainWebsiteReact/static/js/runtime-main.725ef700.js",
     "runtime-main.js.map": "/mainWebsiteReact/static/js/runtime-main.725ef700.js.map",
     "static/css/2.de424728.chunk.css": "/mainWebsiteReact/static/css/2.de424728.chunk.css",
-    "static/js/2.3589b843.chunk.js": "/mainWebsiteReact/static/js/2.3589b843.chunk.js",
-    "static/js/2.3589b843.chunk.js.map": "/mainWebsiteReact/static/js/2.3589b843.chunk.js.map",
+    "static/js/2.bf106cbf.chunk.js": "/mainWebsiteReact/static/js/2.bf106cbf.chunk.js",
+    "static/js/2.bf106cbf.chunk.js.map": "/mainWebsiteReact/static/js/2.bf106cbf.chunk.js.map",
     "index.html": "/mainWebsiteReact/index.html",
-    "precache-manifest.775b5bf99d13aa48a12f9255c499ec9e.js": "/mainWebsiteReact/precache-manifest.775b5bf99d13aa48a12f9255c499ec9e.js",
+    "precache-manifest.4439bc015fa5ba657f1e9da8322930e5.js": "/mainWebsiteReact/precache-manifest.4439bc015fa5ba657f1e9da8322930e5.js",
     "service-worker.js": "/mainWebsiteReact/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/mainWebsiteReact/static/css/2.de424728.chunk.css.map",
-    "static/css/main.f78d80dc.chunk.css.map": "/mainWebsiteReact/static/css/main.f78d80dc.chunk.css.map",
-    "static/js/2.3589b843.chunk.js.LICENSE.txt": "/mainWebsiteReact/static/js/2.3589b843.chunk.js.LICENSE.txt"
+    "static/css/main.73c2f564.chunk.css.map": "/mainWebsiteReact/static/css/main.73c2f564.chunk.css.map",
+    "static/js/2.bf106cbf.chunk.js.LICENSE.txt": "/mainWebsiteReact/static/js/2.bf106cbf.chunk.js.LICENSE.txt",
+    "static/media/discordapp.png": "/mainWebsiteReact/static/media/discordapp.264e98af.png",
+    "static/media/github.png": "/mainWebsiteReact/static/media/github.b05afcf1.png",
+    "static/media/graduationPicture.jpg": "/mainWebsiteReact/static/media/graduationPicture.d0179447.jpg",
+    "static/media/linkedin.png": "/mainWebsiteReact/static/media/linkedin.8bd0e777.png",
+    "static/media/wordpress.png": "/mainWebsiteReact/static/media/wordpress.e8105233.png",
+    "static/media/youngerPicture.JPG": "/mainWebsiteReact/static/media/youngerPicture.60a47bb5.JPG",
+    "static/media/youtube.png": "/mainWebsiteReact/static/media/youtube.d9c1de0c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.725ef700.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.3589b843.chunk.js",
-    "static/css/main.f78d80dc.chunk.css",
-    "static/js/main.20abe323.chunk.js"
+    "static/js/2.bf106cbf.chunk.js",
+    "static/css/main.73c2f564.chunk.css",
+    "static/js/main.be4036af.chunk.js"
   ]
 }
