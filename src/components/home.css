@@ -1,4 +1,27 @@
-/* .img{
-    width: 1vh;
-    height: 1vh;
-} */
+.website-background{
+    background-color: #123C69;
+    margin: 0;
+    min-height: calc(100vh - 48px);
+}
+.mission-quote{
+    padding-top: 2vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 0px 0px 4px;
+}
+.social-media-text{
+    /* padding-top: 2vh; */
+    padding-bottom: 2vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 0px 0px 4px;
+}
+.social-media-logos{
+    margin: 0;
+}
+.social-media-names{
+    padding-top: 0.4vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 0px 0px 4px;
+}
