@@ -3,6 +3,12 @@ import React from 'react';
 import { Component, Fragment } from 'react';
 import { Container, Row, Col} from 'react-bootstrap';
 
+import Facebook from '../assets/images/facebook.png';
+import Github from '../assets/images/github.png';
+import Linkedin from '../assets/images/linkedin.png';
+import Wordpress from '../assets/images/wordpress.png';
+import Youtube from '../assets/images/youtube.png';
+import DiscordApp from '../assets/images/discordapp.png';
  
 const home = () => {
     return (
