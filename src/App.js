@@ -4,7 +4,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { HashRouter, BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
@@ -13,17 +13,17 @@ import Error from './components/404.jsx';
 
 function App() {
   return (
-    <HashRouter basename='/'>
+    <Router>
         <Header />
           <Switch>
-            <Route path="/" component={Home} exact/>
+            <Route path="/" exact component={Home} />
             <Route path="/home" component={Home} exact/>
-          <Route component={Error}/>
+            <Route component={Error}/>
           </Switch>
           <div class="footer-anchor">
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
