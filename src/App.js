@@ -20,7 +20,9 @@ function App() {
             <Route path="/home" component={Home} exact/>
           <Route component={Error}/>
           </Switch>
-          <Footer />
+          <div class="footer-anchor">
+        <Footer />
+      </div>
     </HashRouter>
   );
 }

@@ -37,6 +37,12 @@
   }
 }
 
+.footer-anchor{
+  position: fixed;
+  bottom: 0;
+  
+}
+
 .footer{
   background-color: #343A40;
   min-height: 20px;
