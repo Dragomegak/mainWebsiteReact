@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 
 import { Component, Fragment } from 'react';
-import { Container, Row, Col, Image, fluid} from 'react-bootstrap';
+import { Container, Row, Col, Image, Carousel} from 'react-bootstrap';
 
 import Facebook from '../assets/images/facebook.png';
 import Github from '../assets/images/github.png';
