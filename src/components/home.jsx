@@ -42,14 +42,3 @@ const home = () => {
 }
  
 export default home;
-
-/* 
-<Row>
-    <Col xs={2} md={2} lg={2} class="social-media-logos"><img src={Facebook} href="https://www.facebook.com/Dragomegak/"></img></Col>
-    <Col xs={2} md={2} lg={2} class="social-media-logos"><img src={Github} href="https://www.github.com/Dragomegak/"></img></Col>
-    <Col xs={2} md={2} lg={2} class="social-media-logos"><img src={Linkedin} href="https://www.linkedin.com/in/dragomegak/"></img></Col>
-    <Col xs={2} md={2} lg={2} class="social-media-logos"><img src={Wordpress} href="https://stevenleopensourceblog.wordpress.com/"></img></Col>
-    <Col xs={2} md={2} lg={2} class="social-media-logos"><img src={Youtube} href="https://www.youtube.com/channel/UCs2x5Od16mDHi2RdoCvGMjQ"></img></Col>
-    <Col xs={2} md={2} lg={2} class="social-media-logos"><img src={DiscordApp} href="https://discordapp.com/channels/@me/112352049554817024/"></img></Col>
-</Row>
-} */
