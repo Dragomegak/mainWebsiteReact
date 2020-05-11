@@ -1,7 +1,7 @@
 .website-background{
     background-color: #123C69;
     margin: 0;
-    min-height: calc(100vh - 48px);
+    min-height: calc(100vh - 72px);
 }
 .mission-quote{
     padding-top: 2vh;
