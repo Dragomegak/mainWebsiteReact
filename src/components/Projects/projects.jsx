@@ -5,7 +5,10 @@ import { Table } from 'react-bootstrap';
 
 import PostData from '../../assets/projectData/projects.json';
 
-class Projects extends Component { 
+class Projects extends Component {
+    componentDidMount(){
+        document.title = "MainWebsite - Projects"
+    }  
     render () {
     return (
         <div class="website-background">

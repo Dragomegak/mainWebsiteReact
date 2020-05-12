@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './contactInfo.css';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-const ContactInfo = () => {
+class ContactInfo extends Component {
+    componentDidMount(){
+        document.title = "MainWebsite - Contact-Info"
+    }  
+    render () {
     return(
         <div class="website-background">
             <Container>
@@ -29,6 +33,7 @@ const ContactInfo = () => {
             </Container>
             
         </div>
-    );
+        );
+    }
 }
 export default ContactInfo;

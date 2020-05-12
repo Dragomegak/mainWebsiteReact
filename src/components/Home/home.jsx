@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import { Container, Row, Col, Image, Carousel} from 'react-bootstrap';
 
 import GradPhoto from '../../assets/images/graduationPicture.jpg';
@@ -15,7 +15,11 @@ import Youtube from '../../assets/images/youtube.png';
 import DiscordApp from '../../assets/images/discordapp.png';
 
  
-const home = () => {
+class Home extends Component {
+    componentDidMount(){
+        document.title = "MainWebsite - Home"
+    } 
+    render () {
     return (
         <React.Fragment>
             <div class="website-background">
@@ -50,16 +54,8 @@ const home = () => {
                 </Container>
             </div>
         </React.Fragment>
-    );
+        );
+    }
 }
  
-export default home;
-
-/* <Carousel>
-                    <Carousel.item>
-                        <Image src={Gradphoto}></Image>
-                    </Carousel.item>
-                    <Carousel.item>
-                        <Image src={YoungerPicture}></Image>
-                    </Carousel.item>
-                </Carousel> */
+export default Home;
