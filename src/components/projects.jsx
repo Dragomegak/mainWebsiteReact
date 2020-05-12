@@ -11,7 +11,7 @@ class Projects extends Component {
         <div class="website-background">
             <h2 class="project-title">Highlighted Projects List</h2>
             <p class="github-link"><a href="https://github.com/Dragomegak">Learn more by exploring my GitHub Page!</a></p>
-            <Table responsive>
+            <Table class="table-styling">
                 <thead>
                     <tr>
                         <th>Project Name</th>
