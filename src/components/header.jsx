@@ -11,11 +11,11 @@ const Header = props => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Link href="mainWebsiteReact/#" to="/home" className="nav-link">Home</Link>
-                  <Link href="mainWebsiteReact/#" to="/projects" className="nav-link">Projects</Link>
+                  <Link to="/home" className="nav-link">Home</Link>
+                  <Link to="/projects" className="nav-link">Projects</Link>
               </Nav>
               <Nav className="ml-auto">
-                  <Nav.Link href="mainWebsiteReact/#" href="/home">Contact Info</Nav.Link>
+                  <Nav.Link href="/home">Contact Info</Nav.Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>
