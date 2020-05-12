@@ -1,18 +1,18 @@
 import React from 'react';
  
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table} from 'react-bootstrap';
  
 const Header = props => (
    <div className="App">
       <header>
         <Navbar expand="md" variant="dark" bg="dark">
-          <Navbar.Brand href="#home">Steven Le's Portfolio</Navbar.Brand>
+          <Navbar.Brand>Steven Le's Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href="/home">Home</Nav.Link>
-                  <Nav.Link href="/home">Projects</Nav.Link>
+                  <Link to="/home" className="nav-link">Home</Link>
+                  <Link to="/projects" className="nav-link">Projects</Link>
               </Nav>
               <Nav className="ml-auto">
                   <Nav.Link href="/home">Contact Info</Nav.Link>

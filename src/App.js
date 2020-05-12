@@ -4,7 +4,8 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { HashRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
@@ -16,9 +17,9 @@ function App() {
     <Router>
         <Header />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/home" component={Home} exact/>
-            <Route component={Error}/>
+            <Route exact path="/"><Redirect to="/home" /></Route>
+            <Route path="/home" exact component={Home} />
+            <Route path="*" component={Error}/>
           </Switch>
           <div class="footer-anchor">
         <Footer />
