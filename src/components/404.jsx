@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Button } from 'react-bootstrap';
  
 const Error = () => {
     return (
@@ -13,9 +15,9 @@ const Error = () => {
          </ul>
          <h4>Rerouting</h4>
          <p>Just in case you were looking for a way to get back home press on the button below!</p>
-
+         <Button variant="secondary" size="md" block Link to="/home">Home</Button>
          <p>If you require assistance and want to contact me please press the button below me to reroute to the contact page</p>
-         
+         <Button variant="secondary" size="md" block Link to="/contact-info">Contact Info</Button>
        </div>
     );
 }

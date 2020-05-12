@@ -5,7 +5,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
