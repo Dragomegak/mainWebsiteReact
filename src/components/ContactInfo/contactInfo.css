@@ -1,0 +1,16 @@
+.iframe-container{
+    height: 50vh;
+}
+
+.information-section {
+    /* Handles Information Div Styling*/
+    border-style: solid;
+    background-color: #343A40;
+    padding: 1vh;
+}
+
+.information-text {
+    /* Handles Information Text Styling */
+    color: #fff;
+    text-shadow: #000 0px 0px 4px;
+}
