@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/mainWebsiteReact/static/css/main.780c6620.chunk.css",
-    "main.js": "/mainWebsiteReact/static/js/main.e543ee92.chunk.js",
-    "main.js.map": "/mainWebsiteReact/static/js/main.e543ee92.chunk.js.map",
+    "main.js": "/mainWebsiteReact/static/js/main.b38490b0.chunk.js",
+    "main.js.map": "/mainWebsiteReact/static/js/main.b38490b0.chunk.js.map",
     "runtime-main.js": "/mainWebsiteReact/static/js/runtime-main.725ef700.js",
     "runtime-main.js.map": "/mainWebsiteReact/static/js/runtime-main.725ef700.js.map",
     "static/css/2.de424728.chunk.css": "/mainWebsiteReact/static/css/2.de424728.chunk.css",
-    "static/js/2.d800fa59.chunk.js": "/mainWebsiteReact/static/js/2.d800fa59.chunk.js",
-    "static/js/2.d800fa59.chunk.js.map": "/mainWebsiteReact/static/js/2.d800fa59.chunk.js.map",
+    "static/js/2.e69d05b7.chunk.js": "/mainWebsiteReact/static/js/2.e69d05b7.chunk.js",
+    "static/js/2.e69d05b7.chunk.js.map": "/mainWebsiteReact/static/js/2.e69d05b7.chunk.js.map",
     "index.html": "/mainWebsiteReact/index.html",
-    "precache-manifest.069ea1c48824f99be65d961b6ed072b8.js": "/mainWebsiteReact/precache-manifest.069ea1c48824f99be65d961b6ed072b8.js",
+    "precache-manifest.2935fafa0eecaa97436650e523084d71.js": "/mainWebsiteReact/precache-manifest.2935fafa0eecaa97436650e523084d71.js",
     "service-worker.js": "/mainWebsiteReact/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/mainWebsiteReact/static/css/2.de424728.chunk.css.map",
     "static/css/main.780c6620.chunk.css.map": "/mainWebsiteReact/static/css/main.780c6620.chunk.css.map",
-    "static/js/2.d800fa59.chunk.js.LICENSE.txt": "/mainWebsiteReact/static/js/2.d800fa59.chunk.js.LICENSE.txt",
+    "static/js/2.e69d05b7.chunk.js.LICENSE.txt": "/mainWebsiteReact/static/js/2.e69d05b7.chunk.js.LICENSE.txt",
     "static/media/discordapp.png": "/mainWebsiteReact/static/media/discordapp.264e98af.png",
     "static/media/github.png": "/mainWebsiteReact/static/media/github.b05afcf1.png",
     "static/media/graduationPicture.jpg": "/mainWebsiteReact/static/media/graduationPicture.d0179447.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.725ef700.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.d800fa59.chunk.js",
+    "static/js/2.e69d05b7.chunk.js",
     "static/css/main.780c6620.chunk.css",
-    "static/js/main.e543ee92.chunk.js"
+    "static/js/main.b38490b0.chunk.js"
   ]
 }
