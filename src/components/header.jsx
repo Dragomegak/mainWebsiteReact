@@ -1,7 +1,7 @@
 import React from 'react';
  
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table} from 'react-bootstrap';
+import { Navbar, Nav} from 'react-bootstrap';
  
 const Header = props => (
    <div className="App">
@@ -15,7 +15,7 @@ const Header = props => (
                   <Link to="/projects" className="nav-link">Projects</Link>
               </Nav>
               <Nav className="ml-auto">
-                  <Nav.Link href="/home">Contact Info</Nav.Link>
+                  <Link href="/home">Contact Info</Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>
