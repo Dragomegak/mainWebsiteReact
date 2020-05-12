@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
 import Home from './components/home.jsx';
+import Projects from './components/projects.jsx';
 import Error from './components/404.jsx';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Switch>
             <Route exact path="/"><Redirect to="/home" /></Route>
             <Route path="/home" exact component={Home} />
+            <Route path="/projects" exact component={Projects} />
             <Route path="*" component={Error}/>
           </Switch>
           <div class="footer-anchor">

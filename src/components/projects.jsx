@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { Table } from 'react-bootstrap';
 
-const Projects = props => (
-    <Table responsive>
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>Project Description</th>
-                <th>Work Done</th>
-                <th>Tech Used</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-            </tr>
-        </tbody>
-    </Table>
-);
+import PostData from '../assets/projectData/projects.json';
+
+class Projects extends Component { 
+    render () {
+    return (
+        <Table responsive>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Project Description</th>
+                    <th>Work Done</th>
+                    <th>Tech Used</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {PostData.map((postDetail, index)=>{
+                        return (
+                            <tr>
+                                <td>{postDetail.name}</td>
+                                <td>{postDetail.description}</td>
+                                <td>{postDetail.workDescription}</td>
+                                <td>{postDetail.technologiesUsed}</td>
+                            </tr>
+                            )
+                        }
+                    )}
+            </tbody>
+        </Table>
+        );
+    }
+}
 
 export default Projects;
