@@ -11,6 +11,7 @@ const Header = props => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
+                  {/* Do links this way for it to correctly work */}
                   <Link to="/home" className="nav-link">Home</Link>
                   <Link to="/projects" className="nav-link">Projects</Link>
               </Nav>
