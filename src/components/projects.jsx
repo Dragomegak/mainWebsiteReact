@@ -11,23 +11,23 @@ class Projects extends Component {
         <div class="website-background">
             <h2 class="project-title">Highlighted Projects List</h2>
             <p class="github-link"><a href="https://github.com/Dragomegak">Learn more by exploring my GitHub Page!</a></p>
-            <Table class="table-styling">
+            <Table class="table-background">
                 <thead>
                     <tr>
-                        <th>Project Name</th>
-                        <th>Project Description</th>
-                        <th>Work Done</th>
-                        <th>Tech Used</th>
+                        <th class="project-text">Project Name</th>
+                        <th class="project-text">Project Description</th>
+                        <th class="project-text">Work Done</th>
+                        <th class="project-text">Tech Used</th>
                     </tr>
                 </thead>
                 <tbody>
                     {PostData.map((postDetail, index)=>{
                         return (
                             <tr>
-                                <td>{postDetail.name}</td>
-                                <td>{postDetail.description}</td>
-                                <td>{postDetail.workDescription}</td>
-                                <td>{postDetail.technologiesUsed}</td>
+                                <td class="project-text"><a href={postDetail.link}>{postDetail.name}</a></td>
+                                <td class="project-text">{postDetail.description}</td>
+                                <td class="project-text">{postDetail.workDescription}</td>
+                                <td class="project-text">{postDetail.technologiesUsed}</td>
                             </tr>
                             )
                         }

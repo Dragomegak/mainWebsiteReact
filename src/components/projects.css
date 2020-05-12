@@ -5,11 +5,10 @@
     min-height: calc(100vh - 48px);
     padding-bottom: 5vh;
 }
-.table-styling{
+.table-background{
     background-color: #343A40;
-    color: #fff;
-    text-shadow: #000 0px 0px 4px;
 }
+
 .project-title{
     /* Shifts page down from the header & pads project list*/
 
@@ -19,14 +18,11 @@
     top: 35px; 
     */
     text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh; /* 0.20vh; */
-}
-.project-title>h2{
-    /* Header Color & Attributes */
     text-align: center;
     color: #fff;
     text-shadow: #000 0px 0px 4px;
+    padding-top: 2vh;
+    padding-bottom: 2vh; /* 0.20vh; */
 }
 .github-link{
     /* Header Color & Attributes */
@@ -35,19 +31,8 @@
     text-shadow: #000 0px 0px 4px;
     padding-bottom: 2vh;
 }
-.project-list{
-    /* Styling for the Table */
-    border-style: solid;
-    background-color: #343A40;
-    box-shadow: 10px 10px grey;
-}
 .project-text{
     /* Styling for the Table Text */
     color: #fff;
     text-shadow: #000 0px 0px 4px;
 }
-/* Deprecated
-.row-spacing{
-    padding: 0.5vh;
-}
- */
