@@ -16,7 +16,7 @@ const Header = props => (
                   <Link to="/projects" className="nav-link">Projects</Link>
               </Nav>
               <Nav className="ml-auto">
-                  <Link to="/home" className="nav-link">Contact Info</Link>
+                  <Link to="/contact-info" className="nav-link">Contact Info</Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -11,7 +11,7 @@ import Footer from './components/Footer/footer.jsx';
 import Home from './components/Home/home.jsx';
 import Projects from './components/Projects/projects.jsx';
 import Error from './components/404/404.jsx';
-import ContactInfo from './components/Contact-Info/contact-info.jsx'
+import ContactInfo from './components/ContactInfo/contactInfo.jsx';
 
 function App() {
   return (
