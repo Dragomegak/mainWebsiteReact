@@ -7,15 +7,15 @@ const Header = props => (
    <div className="App">
       <header>
         <Navbar expand="md" variant="dark" bg="dark">
-          <Navbar.Brand href="mainWebsiteReact/">Steven Le's Portfolio</Navbar.Brand>
+          <Navbar.Brand>Steven Le's Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Link to="/home" className="nav-link">Home</Link>
-                  <Link to="/projects" className="nav-link">Projects</Link>
+                  <Link href="mainWebsiteReact/#" to="/home" className="nav-link">Home</Link>
+                  <Link href="mainWebsiteReact/#" to="/projects" className="nav-link">Projects</Link>
               </Nav>
               <Nav className="ml-auto">
-                  <Nav.Link href="/home">Contact Info</Nav.Link>
+                  <Nav.Link href="mainWebsiteReact/#" href="/home">Contact Info</Nav.Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>
