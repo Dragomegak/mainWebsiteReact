@@ -3,7 +3,7 @@ import './projects.css';
 
 import { Table } from 'react-bootstrap';
 
-import PostData from '../assets/projectData/projects.json';
+import PostData from '../../assets/projectData/projects.json';
 
 class Projects extends Component { 
     render () {

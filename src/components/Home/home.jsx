@@ -4,15 +4,15 @@ import './home.css';
 import { Component, Fragment } from 'react';
 import { Container, Row, Col, Image, Carousel} from 'react-bootstrap';
 
-import GradPhoto from '../assets/images/graduationPicture.jpg';
-import YoungerPicture from '../assets/images/youngerPicture.JPG';
+import GradPhoto from '../../assets/images/graduationPicture.jpg';
+import YoungerPicture from '../../assets/images/youngerPicture.JPG';
 
-import Facebook from '../assets/images/facebook.png';
-import Github from '../assets/images/github.png';
-import Linkedin from '../assets/images/linkedin.png';
-import Wordpress from '../assets/images/wordpress.png';
-import Youtube from '../assets/images/youtube.png';
-import DiscordApp from '../assets/images/discordapp.png';
+import Facebook from '../../assets/images/facebook.png';
+import Github from '../../assets/images/github.png';
+import Linkedin from '../../assets/images/linkedin.png';
+import Wordpress from '../../assets/images/wordpress.png';
+import Youtube from '../../assets/images/youtube.png';
+import DiscordApp from '../../assets/images/discordapp.png';
 
  
 const home = () => {

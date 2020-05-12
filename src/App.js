@@ -6,11 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
-import Header from './components/header.jsx';
-import Footer from './components/footer.jsx';
-import Home from './components/home.jsx';
-import Projects from './components/projects.jsx';
-import Error from './components/404.jsx';
+import Header from './components/Header/header.jsx';
+import Footer from './components/Footer/footer.jsx';
+import Home from './components/Home/home.jsx';
+import Projects from './components/Projects/projects.jsx';
+import Error from './components/404/404.jsx';
 
 function App() {
   return (
