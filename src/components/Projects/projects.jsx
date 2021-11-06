@@ -19,11 +19,11 @@ class Projects extends Component {
 
         fetch(`https://api.github.com/users/Dragomegak/repos`)
         .then(response => response.json())
-        .then(result => {this.setState({
-            jsonData: result
-            });
-        })
-    };  
+        .then(json =>{
+            console.log(json);
+            this.setState({ jsonData: json.data })
+         });
+    } 
     
     render () {
     return (
