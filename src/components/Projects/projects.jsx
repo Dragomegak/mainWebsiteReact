@@ -6,26 +6,25 @@ import { Table } from 'react-bootstrap';
 import PostData from '../../assets/projectData/projects.json';
 
 class Projects extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            jsonData: {}
+        };
+    }
+    
     componentDidMount(){
         document.title = "MainWebsite - Projects"
+
         fetch(`https://api.github.com/users/Dragomegak/repos`)
         .then(response => response.json())
-        /* .then(
-            name => {
-                // Make sure you understand this fundamental difference with arrow functions!!!
-                this.setState({
-                    name: name
-                });
-            }
-        ); */
-    }  
-    state = {
-        name: [],
-        description: [],
-        techUsed: [],
-        url: [],
-        languages: []
-    }
+        .then(result => {this.setState({
+            jsonData: result
+            });
+        })
+    };  
+    
     render () {
     return (
         <div class="website-background">
@@ -41,7 +40,7 @@ class Projects extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {PostData.map((postDetail, index)=>{
+                    {/* {PostData.map((postDetail, index)=>{
                         return (
                             <tr class="table-background">
                                 <td class="project-text"><a href={postDetail.link}>{postDetail.name}</a></td>
@@ -51,7 +50,7 @@ class Projects extends Component {
                             </tr>
                             )
                         }
-                    )}
+                    )} */}
                 </tbody>
             </Table>
         </div>
