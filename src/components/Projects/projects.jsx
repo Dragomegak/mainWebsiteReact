@@ -10,14 +10,14 @@ class Projects extends Component {
         document.title = "MainWebsite - Projects"
         fetch(`https://api.github.com/users/Dragomegak/repos`)
         .then(response => response.json())
-        .then(
+        /* .then(
             name => {
                 // Make sure you understand this fundamental difference with arrow functions!!!
                 this.setState({
                     name: name
                 });
             }
-        );
+        ); */
     }  
     state = {
         name: [],
