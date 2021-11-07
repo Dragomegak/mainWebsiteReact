@@ -10,9 +10,10 @@ class Projects extends Component {
 
     constructor(props) {
         super(props);
-        const projects = [];
+        const projects = {};
     }
     state = {
+        json: [],
         size: 0,
         name: [],
         htmlUrl: [],
@@ -25,7 +26,7 @@ class Projects extends Component {
     componentDidMount(){
         document.title = "MainWebsite - Projects"
 
-        /* fetch(`https://api.github.com/users/Dragomegak/repos`)
+        fetch(`https://api.github.com/users/Dragomegak/repos`)
         .then(response => response.json())
         .then(data =>{
             console.log(data);
@@ -36,22 +37,23 @@ class Projects extends Component {
             })
             for (let i = 0; i < data.length; i++){
                 this.setState({
+                    json: data,
                     name: data[i].name,
                     htmlUrl: data[i].html_url,
                     description: data[i].description,
                     dateCreated: data[i].created_at,
                     dateUpdated: data[i].updated_at
                 })
-                fetch(data[i].languages_url)
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    this.setState({
-                        languages: data
-                    })
-                })
+                //fetch(data[i].languages_url)
+                //.then(response => response.json())
+                //.then(data => {
+                //    console.log(data);
+                //    this.setState({
+                //        languages: data
+                //    })
+                //})
             }
-         }); */
+         });
     } 
     
     render () {
@@ -66,24 +68,33 @@ class Projects extends Component {
                         <th class="project-text">Project Description</th>
                         <th class="project-text">Date Created</th>
                         <th class="project-text">Last Updated</th>
-                        <th class="project-text">Tech Used</th>
+                        <th class="project-text">Languages/Frameworks Used</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        
-                    JsonData.map((data, index)=>{
+                    this.state.json.map((data, index)=>{
                         return (
                             <tr class="table-background">
                                 <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
                                 <td class="project-text">{data.description ? data.description : "No information provided"}</td>
                                 <td class="project-text">{data.created_at}</td>
                                 <td class="project-text">{data.updated_at}</td>
-                                <td></td>
+                                <td class="project-text">{data.languages_url}</td>
+                            </tr>)
+                    })
+                    /* JsonData.map((data, index)=>{
+                        return (
+                            <tr class="table-background">
+                                <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
+                                <td class="project-text">{data.description ? data.description : "No information provided"}</td>
+                                <td class="project-text">{data.created_at}</td>
+                                <td class="project-text">{data.updated_at}</td>
+                                <td class="project-text">{data.languages_url}</td>
                             </tr>
                             )
                         }
-                    )}
+                    ) */}
                 </tbody>
             </Table>
         </div>
