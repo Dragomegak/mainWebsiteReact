@@ -7,7 +7,6 @@ const Header = props => (
    <div className="App">
       <header>
         <Navbar expand="md" variant="dark" bg="dark">
-          <Navbar.Brand>Steven Le's Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
