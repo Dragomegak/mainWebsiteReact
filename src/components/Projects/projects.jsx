@@ -15,11 +15,6 @@ class Projects extends Component {
     state = {
         json: [],
         size: 0,
-        name: [],
-        htmlUrl: [],
-        description: [],
-        dateCreated: [],
-        dateUpdated: [],
         languages: []
     };
     
@@ -33,27 +28,21 @@ class Projects extends Component {
             //console.log(json[0].id);
             //console.log(data.length);
             this.setState({
-                size: data.length
+                size: data.length,
+                json: data,
             })
-            for (let i = 0; i < data.length; i++){
-                this.setState({
-                    json: data,
-                    name: data[i].name,
-                    htmlUrl: data[i].html_url,
-                    description: data[i].description,
-                    dateCreated: data[i].created_at,
-                    dateUpdated: data[i].updated_at
+            /* for (let i = 0; i < data.length; i++){
+                fetch(data[i].languages_url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    this.setState({
+                        languages: data
+                    })
                 })
-                //fetch(data[i].languages_url)
-                //.then(response => response.json())
-                //.then(data => {
-                //    console.log(data);
-                //    this.setState({
-                //        languages: data
-                //    })
-                //})
-            }
+            }  */
          });
+        
     } 
     
     render () {
@@ -73,17 +62,17 @@ class Projects extends Component {
                 </thead>
                 <tbody>
                     {
-                    this.state.json.map((data, index)=>{
+                    this.state.json.map((data, index)=>{ //works
                         return (
                             <tr class="table-background">
                                 <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
                                 <td class="project-text">{data.description ? data.description : "No information provided"}</td>
                                 <td class="project-text">{data.created_at}</td>
                                 <td class="project-text">{data.updated_at}</td>
-                                <td class="project-text">{data.languages_url}</td>
+                                <td class="project-text">{data.language ? data.language: "Data not provided"}</td>
                             </tr>)
                     })
-                    /* JsonData.map((data, index)=>{
+                    /* JsonData.map((data, index)=>{ //works
                         return (
                             <tr class="table-background">
                                 <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
