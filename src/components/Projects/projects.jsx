@@ -9,13 +9,7 @@ import JsonData from '../../assets/projectData/repos.json';
 class Projects extends Component {
 
     /* To Do:
-    Get OAuth Working so I can call API more than a handful of times for below functionality
     Languages_url from data[i].languages_url, get object and foreach loop onto appropriate column */
-
-    constructor(props) {
-        super(props);
-        const projects = {};
-    }
     state = {
         json: [],
         size: 0,
@@ -25,30 +19,50 @@ class Projects extends Component {
     componentDidMount(){
         document.title = "MainWebsite - Projects"
 
-        fetch(`https://api.github.com/users/Dragomegak/repos`)
+        fetch(`https://api.github.com/users/Dragomegak/repos`, {
+            method: "GET",
+            headers: {
+                'Authorization': 'token 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',
+            }
+        })
         .then(response => response.json())
         .then(data =>{
-            console.log(data);
+            //console.log(data);
             //console.log(json[0].id);
             //console.log(data.length);
             this.setState({
                 size: data.length,
                 json: data,
             })
-            /* for (let i = 0; i < data.length; i++){
-                fetch(data[i].languages_url)
+            for (let i = 0; i < data.length; i++){
+                fetch(data[i].languages_url, {
+                    method: "GET",
+                    headers: {
+                        'Authorization': 'token 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',
+                    }
+                })
                 .then(response => response.json())
-                .then(data => {
-                    console.log(data);
+                .then(languagedata => {
+                    //console.log(languagedata);
+                    //this.languagesToString(languagedata);
                     this.setState({
-                        languages: data
+                        languages: this.languagesToString(languagedata)
                     })
                 })
-            }  */
+            } 
          });
         
     } 
-    
+    languagesToString(object){
+        let result = [];
+        let finalstring = "";
+        for (const property in object){
+            result.push(property.toString());
+        }
+        finalstring = result.join(",");
+        return finalstring;
+        //console.log(finalstring);
+    }
     render () {
     return (
         <div class="website-background">
@@ -66,17 +80,26 @@ class Projects extends Component {
                 </thead>
                 <tbody>
                     {
-                    this.state.json.map((data, index)=>{ //works
-                        return (
-                            <tr class="table-background">
-                                <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
-                                <td class="project-text">{data.description ? data.description : "No information provided"}</td>
-                                <td class="project-text">{data.created_at}</td>
-                                <td class="project-text">{data.updated_at}</td>
-                                <td class="project-text">{data.language ? data.language: "Data not provided"}</td>
-                            </tr>)
+                        this.state.json.map((data, index)=>{ //works
+                            return (
+                                <tr class="table-background">
+                                    <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
+                                    <td class="project-text">{data.description ? data.description : "No information provided"}</td>
+                                    <td class="project-text">{data.created_at.substring(0,10)}</td>
+                                    <td class="project-text">{data.updated_at.substring(0,10)}</td>
+                                    <td class="project-text">{data.language}</td>
+                                </tr>)
                     })
-                    /* JsonData.map((data, index)=>{ //works
+                   }
+                </tbody>
+            </Table>
+        </div>
+        );
+    }
+}
+
+export default Projects;
+ /* JsonData.map((data, index)=>{ //works
                         return (
                             <tr class="table-background">
                                 <td class="project-text"><a href={data.html_url}>{data.name}</a></td>
@@ -86,13 +109,5 @@ class Projects extends Component {
                                 <td class="project-text">{data.languages_url}</td>
                             </tr>
                             )
-                        }
-                    ) */}
-                </tbody>
-            </Table>
-        </div>
-        );
-    }
-}
-
-export default Projects;
+                        } //<td class="project-text">{data.language ? data.language: "Data not provided"}</td>
+                    ) */
