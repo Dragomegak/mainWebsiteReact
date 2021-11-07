@@ -48,7 +48,7 @@ class Home extends Component {
                         <Col><p class="social-media-names">Facebook</p></Col>
                         <Col><p class="social-media-names">Github</p></Col>
                         <Col><p class="social-media-names">Linkedin</p></Col>
-                        <Col><p class="social-media-names">Wordpress</p></Col>
+                        <Col><p class="social-media-names">Wordpress Blog</p></Col>
                         <Col><p class="social-media-names">Youtube</p></Col>
                         <Col><p class="social-media-names">DiscordApp</p></Col>
                     </Row>

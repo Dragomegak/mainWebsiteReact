@@ -13,7 +13,7 @@
     */
     padding-top: 1vh;
     padding-bottom: 0.180vh;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.226);
 }
 .carousel-item{
     max-height: 40vh;
