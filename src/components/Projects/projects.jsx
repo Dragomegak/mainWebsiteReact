@@ -8,6 +8,10 @@ import JsonData from '../../assets/projectData/repos.json';
 
 class Projects extends Component {
 
+    /* To Do:
+    Get OAuth Working so I can call API more than a handful of times for below functionality
+    Languages_url from data[i].languages_url, get object and foreach loop onto appropriate column */
+
     constructor(props) {
         super(props);
         const projects = {};
