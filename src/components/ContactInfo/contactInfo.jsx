@@ -19,8 +19,8 @@ class ContactInfo extends Component {
                     <Col>
                         <div class="information-section">
                             <h4 class="information-text">Steven Le</h4>
-                            <p class="information-text">Phone number: (647)-986-6569</p>
                             <p class="information-text">Email: <a href="mailto:stevenle6569@gmail.com?Subject=Business%Inquiry">stevenle6569@gmail.com</a></p>
+                            <p class="information-text">Phone number: <a href="tel:647-986-6569">(647)-986-6569</a></p>
                             <p class="information-text">Avaliability: </p>
                             <p class="information-text">Monday - Friday:  12PM - 1 PM & 7 PM - 10 PM</p>
                             <p class="information-text">Weekends: 1PM - 6PM</p>
