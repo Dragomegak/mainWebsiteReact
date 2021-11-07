@@ -37,12 +37,12 @@ class Home extends Component {
                 <h4 class="social-media-text">Social Media Links</h4>
                 <Container>
                     <Row>
-                        <Col xs={2} class="social-media-logos"><Image src={Facebook} fluid href="https://www.facebook.com/Dragomegak/"></Image></Col>
-                        <Col xs={2} class="social-media-logos"><Image src={Github} fluid href="https://www.github.com/Dragomegak/"></Image></Col>
-                        <Col xs={2} class="social-media-logos"><Image src={Linkedin} fluid href="https://www.linkedin.com/in/dragomegak/"></Image></Col>
-                        <Col xs={2} class="social-media-logos"><Image src={Wordpress} fluid href="https://stevenleopensourceblog.wordpress.com/"></Image></Col>
-                        <Col xs={2} class="social-media-logos"><Image src={Youtube} fluid href="https://www.youtube.com/channel/UCs2x5Od16mDHi2RdoCvGMjQ"></Image></Col>
-                        <Col xs={2} class="social-media-logos"><Image src={DiscordApp} fluid href="https://discordapp.com/channels/@me/112352049554817024/"></Image></Col>
+                        <Col xs={2} class="social-media-logos"><a href="https://www.facebook.com/Dragomegak/"><Image src={Facebook} fluid ></Image></a></Col>
+                        <Col xs={2} class="social-media-logos"><a href="https://www.github.com/Dragomegak/"><Image src={Github} fluid ></Image></a></Col>
+                        <Col xs={2} class="social-media-logos"><a href="https://www.linkedin.com/in/dragomegak/"><Image src={Linkedin} fluid ></Image></a></Col>
+                        <Col xs={2} class="social-media-logos"><a href="https://stevenleopensourceblog.wordpress.com/"><Image src={Wordpress} fluid ></Image></a></Col>
+                        <Col xs={2} class="social-media-logos"><a href="https://www.youtube.com/channel/UCs2x5Od16mDHi2RdoCvGMjQ"><Image src={Youtube} fluid ></Image></a></Col>
+                        <Col xs={2} class="social-media-logos"><a href="https://discordapp.com/channels/@me/112352049554817024/"><Image src={DiscordApp} fluid ></Image></a></Col>
                     </Row>
                     <Row>
                         <Col><p class="social-media-names">Facebook</p></Col>
