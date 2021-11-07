@@ -15,9 +15,11 @@
     padding-bottom: 0.180vh;
     background-color: grey;
 }
-/* .carousel-item{
+.carousel-item{
     max-height: 50vh;
-} */
+    min-width: auto;
+    object-fit: contain;
+}
 
 .mission-quote{
     padding-top: 2vh;
@@ -26,7 +28,7 @@
     text-shadow: #000 0px 0px 4px;
 }
 .social-media-text{
-    /* padding-top: 2vh; */
+    padding-top: 2vh;
     padding-bottom: 2vh;
     text-align: center;
     color: #fff;
