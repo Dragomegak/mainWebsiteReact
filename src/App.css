@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -36,7 +25,10 @@
     transform: rotate(360deg);
   }
 }
-
+.header{
+  background-color: hsl(0, 0%, 18.82%);
+  color: #fff;
+}
 .footer-anchor{
   position: fixed;
   bottom: 0;
@@ -44,7 +36,7 @@
 }
 
 .footer{
-  background-color: #343A40;
+  background-color: hsl(0, 0%, 18.82%);;
   min-height: 20px;
   text-align: center;
   color: #fff;
