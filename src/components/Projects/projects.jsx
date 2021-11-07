@@ -20,12 +20,7 @@ class Projects extends Component {
     componentDidMount(){
         document.title = "MainWebsite - Projects"
 
-        fetch(`https://api.github.com/users/Dragomegak/repos`, {
-            method: "GET",
-            headers: {
-                'Authorization': '${AUTHTOKEN}',
-            }
-        })
+        fetch(`https://api.github.com/users/Dragomegak/repos`)
         .then(response => response.json())
         .then(data =>{
             console.log(data);
@@ -36,12 +31,7 @@ class Projects extends Component {
                 json: data,
             })
             for (let i = 0; i < data.length; i++){
-                fetch(data[i].languages_url, {
-                    method: "GET",
-                    headers: {
-                        'Authorization': '${AUTHTOKEN}',
-                    }
-                })
+                fetch(data[i].languages_url)
                 .then(response => response.json())
                 .then(languagedata => {
                     //console.log(languagedata);
