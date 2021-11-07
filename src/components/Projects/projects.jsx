@@ -5,6 +5,7 @@ import { Table } from 'react-bootstrap';
 
 import PostData from '../../assets/projectData/projects.json';
 import JsonData from '../../assets/projectData/repos.json';
+const {AUTHTOKEN} = process.env;
 
 class Projects extends Component {
 
@@ -22,12 +23,12 @@ class Projects extends Component {
         fetch(`https://api.github.com/users/Dragomegak/repos`, {
             method: "GET",
             headers: {
-                'Authorization': 'token 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',
+                'Authorization': '${AUTHTOKEN}',
             }
         })
         .then(response => response.json())
         .then(data =>{
-            //console.log(data);
+            console.log(data);
             //console.log(json[0].id);
             //console.log(data.length);
             this.setState({
@@ -38,7 +39,7 @@ class Projects extends Component {
                 fetch(data[i].languages_url, {
                     method: "GET",
                     headers: {
-                        'Authorization': 'token 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',
+                        'Authorization': '${AUTHTOKEN}',
                     }
                 })
                 .then(response => response.json())
@@ -89,7 +90,7 @@ class Projects extends Component {
                                     <td class="project-text">{data.updated_at.substring(0,10)}</td>
                                     <td class="project-text">{data.language}</td>
                                 </tr>)
-                    })
+                        })
                    }
                 </tbody>
             </Table>
