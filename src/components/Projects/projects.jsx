@@ -78,7 +78,7 @@ class Projects extends Component {
                                     <td class="project-text">{data.description ? data.description : "No information provided"}</td>
                                     <td class="project-text">{data.created_at.substring(0,10)}</td>
                                     <td class="project-text">{data.updated_at.substring(0,10)}</td>
-                                    <td class="project-text">{data.language}</td>
+                                    <td class="project-text">{data.language ? data.language : "No information provided"}</td>
                                 </tr>)
                         })
                    }
