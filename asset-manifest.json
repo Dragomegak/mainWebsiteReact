@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mainWebsiteReact/static/css/main.2ddefa59.chunk.css",
-    "main.js": "/mainWebsiteReact/static/js/main.20f6fc4d.chunk.js",
-    "main.js.map": "/mainWebsiteReact/static/js/main.20f6fc4d.chunk.js.map",
+    "main.css": "/mainWebsiteReact/static/css/main.d43d9c59.chunk.css",
+    "main.js": "/mainWebsiteReact/static/js/main.d70ef657.chunk.js",
+    "main.js.map": "/mainWebsiteReact/static/js/main.d70ef657.chunk.js.map",
     "runtime-main.js": "/mainWebsiteReact/static/js/runtime-main.725ef700.js",
     "runtime-main.js.map": "/mainWebsiteReact/static/js/runtime-main.725ef700.js.map",
     "static/css/2.de424728.chunk.css": "/mainWebsiteReact/static/css/2.de424728.chunk.css",
-    "static/js/2.523f4336.chunk.js": "/mainWebsiteReact/static/js/2.523f4336.chunk.js",
-    "static/js/2.523f4336.chunk.js.map": "/mainWebsiteReact/static/js/2.523f4336.chunk.js.map",
+    "static/js/2.7c3d42ec.chunk.js": "/mainWebsiteReact/static/js/2.7c3d42ec.chunk.js",
+    "static/js/2.7c3d42ec.chunk.js.map": "/mainWebsiteReact/static/js/2.7c3d42ec.chunk.js.map",
     "index.html": "/mainWebsiteReact/index.html",
-    "precache-manifest.0c3fe11a4a9297be77a0458bd4f05082.js": "/mainWebsiteReact/precache-manifest.0c3fe11a4a9297be77a0458bd4f05082.js",
+    "precache-manifest.d6c61ecac5fc9799b9a22fe8cadc0f99.js": "/mainWebsiteReact/precache-manifest.d6c61ecac5fc9799b9a22fe8cadc0f99.js",
     "service-worker.js": "/mainWebsiteReact/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/mainWebsiteReact/static/css/2.de424728.chunk.css.map",
-    "static/css/main.2ddefa59.chunk.css.map": "/mainWebsiteReact/static/css/main.2ddefa59.chunk.css.map",
-    "static/js/2.523f4336.chunk.js.LICENSE.txt": "/mainWebsiteReact/static/js/2.523f4336.chunk.js.LICENSE.txt",
+    "static/css/main.d43d9c59.chunk.css.map": "/mainWebsiteReact/static/css/main.d43d9c59.chunk.css.map",
+    "static/js/2.7c3d42ec.chunk.js.LICENSE.txt": "/mainWebsiteReact/static/js/2.7c3d42ec.chunk.js.LICENSE.txt",
     "static/media/discordapp.png": "/mainWebsiteReact/static/media/discordapp.264e98af.png",
     "static/media/github.png": "/mainWebsiteReact/static/media/github.b05afcf1.png",
     "static/media/graduationPicture.jpg": "/mainWebsiteReact/static/media/graduationPicture.d0179447.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.725ef700.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.523f4336.chunk.js",
-    "static/css/main.2ddefa59.chunk.css",
-    "static/js/main.20f6fc4d.chunk.js"
+    "static/js/2.7c3d42ec.chunk.js",
+    "static/css/main.d43d9c59.chunk.css",
+    "static/js/main.d70ef657.chunk.js"
   ]
 }
